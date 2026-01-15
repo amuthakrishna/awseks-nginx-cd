@@ -1,6 +1,6 @@
 app:
   name: myapp
-  image: nginx
+  image: krishnamoorthy1/awseks-nginx
   version: latest
   port: 80
   replicas: 2
@@ -14,14 +14,3 @@ httpRoute:
 
 ingress:
   enabled: false
-
-# helmfile.yaml
-================
-helm create nginx-dev
-helmfile.yaml
-
-releases:
-    - name: nginx-dev
-      chart: ./nginx-dev
-      values:
-        - ./nginx-dev/values.yaml
