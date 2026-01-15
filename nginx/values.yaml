@@ -1,7 +1,7 @@
 app:
   name: myapp
   image: krishnamoorthy1/awseks-nginx
-  tag: "470"
+  tag: "469"
   port: 80
   replicas: 2
 
